@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiernan Memorial Messages</title>
+</head>
+<body>
+    <h1>Memorial Messages</h1>
+        <div th:each="message : ${messages}">
+            Name: <span th:text="${message.author}"></span><br>
+            Memory: <span th:text="${message.message}"></span>
+        </div>
+</body>
+</html>
