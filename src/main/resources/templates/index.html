@@ -33,11 +33,11 @@
 
             <div class="memory-field item-fields">
                 <label>Memory: </label>
-                <textarea th:field="${user.message}" rows="5" cols="12"></textarea>
+                <textarea class="textbox" th:field="${user.message}" rows="5" cols="12"></textarea>
             </div>
 
             <div class="item-fields">
-                <input type="file" name="file" class="form" required>
+                <input type="file" name="file" class="form">
             </div>
             <button class="btn btn-primary" type="submit">Upload</button>
         </div>

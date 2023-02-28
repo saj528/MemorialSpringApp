@@ -21,16 +21,15 @@
 
 </section>
 <section>
-    <hr class="white-hr">
+    <br>
     <div class="memory-button">
         <a class="btn btn-primary" href="/">Post a Memory</a>
     </div>
-    <hr class="white-hr">
 </section>
 <section class="container">
     <div class="single_comment" th:each="user : ${users}">
 
-        <div>
+        <div th:if="${user.document.img} != '' ">
             <img th:src="@{|data:image/png;base64,${user.document.img}|}" width="500" height=auto/>
         </div>
 
